@@ -29,10 +29,10 @@ $lazy = Lazy::of(function (): int {return random_int(1, 1000); });
 function domainOperation(): Either {}
 ```
 
-### TryEx
+### TryTo
 
 ```php
-/** @var TryEx<Result> $result */
-$result = TryEx::of(function(){throw new \DomainException('use ddd');});
+/** @var TryTo<Result> $result */
+$result = TryTo::run(function(){throw new \DomainException('use ddd');});
 $result->getOrElse(new Result())
 ```

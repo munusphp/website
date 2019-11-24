@@ -1,6 +1,7 @@
 # Munus PHP website
 
 This website is built using Docusaurus 2, a modern static website generator.
+All commit to master are automaticcly deployed to live with [buddy.works](https://buddy.works)
 
 ### Installation
 
