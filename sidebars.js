@@ -7,6 +7,17 @@
 
 module.exports = {
   docs: {
-    Munus: ['start', 'values', 'collections']
+    Munus: ['start', 'value', 'traversable',
+      {
+        type: "category",
+        label: "Values",
+        items: ['option', 'tryto', 'either', 'lazy']
+      },
+      {
+        type: "category",
+        label: "Collections",
+        items: ['map', 'set', 'stream', 'list']
+      }
+    ]
   },
 };

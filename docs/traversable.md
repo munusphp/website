@@ -1,7 +1,7 @@
 ---
-id: collections
-title: Collections
-sidebar_label: Collections
+id: traversable
+title: Traversable
+sidebar_label: Traversable
 ---
 
 ## Traversable

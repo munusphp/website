@@ -8,7 +8,7 @@
 module.exports = {
   title: 'Munus',
   tagline: 'Power of object-oriented programming with the elegance of functional programming.',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://munusphp.github.io/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'munusphp', // Usually your GitHub org/user name.

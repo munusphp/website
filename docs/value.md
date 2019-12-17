@@ -1,7 +1,7 @@
 ---
-id: values
-title: Values
-sidebar_label: Values
+id: value
+title: Value
+sidebar_label: Value
 ---
 
 ## Value
