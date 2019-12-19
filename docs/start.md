@@ -5,7 +5,7 @@ sidebar_label: Getting started
 ---
 ## Install
 
-You can install it with Composer:
+You can install Munus with Composer:
 
 ```bash
 composer require munusphp/munus
@@ -26,19 +26,19 @@ What you need to know about `Value`:
  - it can be safely compared with other value
 
 Control values:
- - Option
- - Either
- - TryTo
+ - [Option](option.md)
+ - [Either](either.md)
+ - [TryTo](tryto.md)
 
 Collection values
- - Map
- - Set
- - GenericList
- - Stream
+ - [Map](map.md)
+ - [Set](set.md)
+ - [GenericList](list.md)
+ - [Stream](stream.md)
  
 Other componets:
- - Lazy
- - Tuple
+ - [Lazy](lazy.md)
+ - [Tuple](tuple.md)
 
 ## Architecture
 
