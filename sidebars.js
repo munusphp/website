@@ -7,7 +7,7 @@
 
 module.exports = {
   docs: {
-    Munus: ['start', 'functional-programming', 'data-structures', 'tuple',
+    Munus: ['start', 'functional-programming', 'generic-types', 'data-structures', 'tuple',
       {
         type: "category",
         label: "Values",

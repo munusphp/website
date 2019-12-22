@@ -13,17 +13,13 @@ composer require munusphp/munus
 
 Munus is currently in experimental phase, so use `dev-master`.
 
-## Value
+If the functional paradigm is new to you, first check the [Functional programming](functional-programming.md) tab.
+Otherwise, you can see below the structures available in the Munus library.
+
+## Values
 
 Functional programming is all about values and transformation of values using functions.
 Munus provides the necessary controls and collections to accomplish this goal in every-day PHP programming.
-
-`Value` is the basic and most important type of this library. 
-What you need to know about `Value`:
- - it is immutable by default
- - it is generic wrapper
- - it can be empty
- - it can be safely compared with other value
 
 Control values:
  - [Option](option.md)
@@ -36,7 +32,7 @@ Collection values
  - [GenericList](list.md)
  - [Stream](stream.md)
  
-Other componets:
+Other values:
  - [Lazy](lazy.md)
  - [Tuple](tuple.md)
 
