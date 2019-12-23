@@ -16,7 +16,7 @@ module.exports = {
       {
         type: "category",
         label: "Collections",
-        items: ['map', 'set', 'stream', 'list']
+        items: ['set', 'stream', 'list', 'map']
       }
     ]
   },

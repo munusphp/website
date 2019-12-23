@@ -13,4 +13,4 @@ $lazy->isEvaluated(); // return false
 $lazy->get(); //returns random int
 $lazy->isEvaluated(); // return true
 $lazy->get(); // returns same random int
-```
+``` 
