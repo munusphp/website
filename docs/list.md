@@ -12,7 +12,7 @@ Its immutability makes it suitable for concurrent programming (which not directl
 `GenericList` is composed of a head and a tail. Head contains first value, tail is another list instance.
 The list has two implementations available:
  - `Nil` which stand for empty list
- - `Cons` which stand for a list with one or more elements
+ - `Cons` which stand for a list with one or more elements (consisting of a head and tail)
  
 ## Construction
 
