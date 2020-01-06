@@ -11,8 +11,6 @@ You can install Munus with Composer:
 composer require munusphp/munus
 ```
 
-Munus is currently in experimental phase, so use `dev-master`.
-
 If the functional paradigm is new to you, first check the [Functional programming](functional-programming.md) tab.
 Otherwise, you can see below the structures available in the Munus library.
 
