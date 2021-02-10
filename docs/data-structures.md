@@ -45,7 +45,8 @@ Tests:
 Type conversion:
  - `collect(Collector $collector)` - collects the underlying value(s) (if present) using the provided $collector, available collectors are described below
  - `toOption()` - converts value to an `Option`
- - `ToStream()` - converts value to a `Stream`
+ - `toStream()` - converts value to a `Stream`
+ - `toArray()` - converts value to native PHP array `[]`
 
 ## Traversable
 
