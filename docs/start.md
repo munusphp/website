@@ -33,6 +33,7 @@ Collection values
 Other values:
  - [Lazy](lazy.md)
  - [Tuple](tuple.md)
+ - [Match](match.md)
 
 ## Architecture
 
