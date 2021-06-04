@@ -20,7 +20,7 @@ module.exports = {
         alt: 'Munus Logo',
         src: 'img/logo.svg',
       },
-      links: [
+      items: [
         {to: 'docs/start', label: 'Docs', position: 'left'},
         {
           href: 'https://github.com/munusphp/munus',
@@ -44,6 +44,9 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Arkadiusz Kondas. Built with Docusaurus.`,
     },
+    prism: {
+      additionalLanguages: ['php']
+    }
   },
   presets: [
     [
