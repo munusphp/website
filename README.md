@@ -1,34 +1,34 @@
 # Munus PHP website
 
 This website is built using Docusaurus 2, a modern static website generator.
-All commit to master are automaticcly deployed to live with [buddy.works](https://buddy.works)
+All commit to master are automatically deployed to live with [buddy.works](https://buddy.works)
 
-### Installation
+## Installation
 
+```bash
+yarn
 ```
-$ yarn
-```
 
-### Local Development
+## Local Development
 
-```
-$ yarn start
+```bash
+yarn start
 ```
 
 This command starts a local development server and open up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+## Build
 
-```
-$ yarn build
+```bash
+yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Deployment
+## Deployment
 
-```
-$ GIT_USER=<Your GitHub username> USE_SSH=1 yarn deploy
+```bash
+GIT_USER=<Your GitHub username> USE_SSH=1 yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
