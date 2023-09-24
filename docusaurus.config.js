@@ -7,7 +7,7 @@
 
 module.exports = {
   title: 'Munus',
-  tagline: 'Power of object-oriented programming with the elegance of functional programming.',
+  tagline: 'Where PHP\'s Object-Oriented Power Meets Functional Elegance!',
   url: 'https://munusphp.github.io/',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -19,6 +19,7 @@ module.exports = {
       logo: {
         alt: 'Munus Logo',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg',
       },
       items: [
         {to: 'docs/start', label: 'Docs', position: 'left'},

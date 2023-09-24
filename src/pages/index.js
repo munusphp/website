@@ -7,9 +7,8 @@
 
 import React from 'react';
 import classnames from 'classnames';
-import Layout from '@theme/Layout';
+import Footer from '@theme/Footer';
 import Link from '@docusaurus/Link';
-import CodeBlock from '@theme/CodeBlock';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
@@ -67,26 +66,33 @@ function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
   return (
-    <Layout
-      title={`${siteConfig.title} PHP`}
-      description="Power of object-oriented programming with the elegance of functional programming.">
+    <div>
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={classnames('container', styles.container)}>
+          <img className={classnames(styles.hero__logo)} src="img/logo-dark.svg" alt="munus-logo"/>
+          <h1 className={classnames('hero__title', styles.hero__title)}>{siteConfig.title}</h1>
+          <p className={classnames('hero__subtitle', styles.hero__subtitle)}>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                'button button--outline button--secondary button--lg',
+                'button button--outline button--primary button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/start')}>
               Get Started
             </Link>
+            <Link
+              className={classnames(
+                'button button--outline button--secondary button--lg',
+                styles.sourceCode,
+              )}
+              to="https://github.com/munusphp/munus">
+              Source code
+            </Link>
           </div>
         </div>
       </header>
-      <main>
+      <main className={styles.main}>
         {features && features.length && (
           <section className={styles.features}>
             <div className="container">
@@ -98,8 +104,16 @@ function Home() {
             </div>
           </section>
         )}
+        <div className={styles.codeExample}>
+          <h2 className={styles.codeExampleTitle}>How it works?</h2>
+          <div className={styles.codeExampleContainer}>
+            <img className={styles.withoutMunus} src='img/without-munus.webp' alt='Without munus' />
+            <img className={styles.withMunus} src='img/with-munus.webp' alt='With munus' />
+          </div>
+        </div>
       </main>
-    </Layout>
+      <Footer></Footer>
+    </div>
   );
 }
 
