@@ -11,15 +11,44 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background: url('../../static/img/bg.webp') no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
+  }
+
+  .codeExampleImage {
+    width: 100%;
+    filter: drop-shadow(0px 14px 30px #00000090);
+  }
+
+  .heroLogo {
+    width: 6rem;
+  }
+  
+  .heroTitle {
+    font-size: 3rem!important;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.5rem!important;
+  }
+
+  .colorModeToggle {
+    padding: 0!important;
+  }
+
+  .container {
+    padding-top: 0!important;
   }
 }
 
@@ -27,6 +56,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  flex-wrap: wrap;
 }
 
 .features {
@@ -39,4 +71,75 @@
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.container {
+  max-width: 48rem;
+  padding: 1rem 0 4rem 0;
+}
+
+.heroLogo {
+  max-width: 10rem;
+}
+
+.heroTitle {
+  font-size: 5rem;
+  color: #FFFFFF;
+}
+
+.heroSubtitle {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+}
+
+.getStarted {
+  color: #000000!important;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+.sourceCode {
+  color: #FFFFFF!important;
+  background-color: transparent;
+  border-color: #FFFFFF;
+}
+
+.getStarted, .sourceCode {
+  width: 13rem;
+}
+
+.main {
+  padding: 5rem 0;
+}
+
+.codeExampleContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+.codeExampleImage {
+  max-width: 40rem;
+  filter: drop-shadow(0px 14px 30px #00000090);
+}
+
+.codeExample {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.codeExampleTitle {
+  font-size: 2.5rem;
+  margin-top: 3.5rem;
+}
+
+.colorModeToggle {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding: 1rem;
 }
