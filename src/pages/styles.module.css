@@ -89,12 +89,12 @@
 
 .withMunus {
   max-width: 40rem;
-  filter: drop-shadow(0px 11px 30px #00000090);
+  filter: drop-shadow(0px 14px 30px #00000090);
 }
 
 .withoutMunus {
-  max-width: 32rem;
-  filter: drop-shadow(0px 11px 30px #00000090);
+  max-width: 40rem;
+  filter: drop-shadow(0px 14px 30px #00000090);
 }
 
 .codeExample {
