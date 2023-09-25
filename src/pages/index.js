@@ -9,9 +9,14 @@ import React from 'react';
 import classnames from 'classnames';
 import Footer from '@theme/Footer';
 import Link from '@docusaurus/Link';
+import LayoutProvider from '@theme/Layout/Provider';
+import ColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import FooterCopyright from '@theme/Footer/Copyright';
+import FooterLayout from '@theme/Footer/Layout';
+import {useThemeConfig} from '@docusaurus/theme-common';
 
 const features = [
   {
@@ -65,9 +70,18 @@ function Feature({imageUrl, title, description}) {
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
+  const {footer} = useThemeConfig();
+  if (!footer) {
+    return null;
+  }
+  const {copyright, links, logo, style} = footer;
+
   return (
-    <div>
+    <LayoutProvider>
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
+        <div className={styles.colorModeToggle}>
+          <ColorModeToggle/>
+        </div>
         <div className={classnames('container', styles.container)}>
           <img className={classnames(styles.hero__logo)} src="img/logo-dark.svg" alt="munus-logo"/>
           <h1 className={classnames('hero__title', styles.hero__title)}>{siteConfig.title}</h1>
@@ -107,13 +121,16 @@ function Home() {
         <div className={styles.codeExample}>
           <h2 className={styles.codeExampleTitle}>How it works?</h2>
           <div className={styles.codeExampleContainer}>
-            <img className={styles.withoutMunus} src='img/without-munus.webp' alt='Without munus' />
-            <img className={styles.withMunus} src='img/with-munus.webp' alt='With munus' />
+            <img className={styles.codeExampleImage} src='img/without-munus.webp' alt='Without munus' />
+            <img className={styles.codeExampleImage} src='img/with-munus.webp' alt='With munus' />
           </div>
         </div>
       </main>
-      <Footer></Footer>
-    </div>
+      <FooterLayout
+        style={style}
+        copyright={copyright && <FooterCopyright copyright={copyright} />}
+      />
+    </LayoutProvider>
   );
 }
 
