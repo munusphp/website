@@ -32,17 +32,7 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Docs',
-              to: 'docs/start',
-            },
-          ],
-        }
-      ],
+      links: [],
       copyright: `Copyright © ${new Date().getFullYear()} Arkadiusz Kondas. Built with Docusaurus.`,
     },
     prism: {

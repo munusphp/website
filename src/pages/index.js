@@ -8,13 +8,12 @@
 import React from 'react';
 import classnames from 'classnames';
 import Link from '@docusaurus/Link';
+import Footer from '@theme/Footer';
 import LayoutProvider from '@theme/Layout/Provider';
 import ColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
-import FooterCopyright from '@theme/Footer/Copyright';
-import FooterLayout from '@theme/Footer/Layout';
 
 const features = [
   {
@@ -118,12 +117,16 @@ function Home() {
             <img className={styles.codeExampleImage} src='img/without-munus.webp' alt='Without munus' />
             <img className={styles.codeExampleImage} src='img/with-munus.webp' alt='With munus' />
           </div>
+          <Link
+            className={
+              'button button--outline button--primary button--lg'
+            }
+            to={useBaseUrl('docs/start')}>
+            See more...
+          </Link>
         </div>
       </main>
-      <FooterLayout
-        style={style}
-        copyright={copyright && <FooterCopyright copyright={copyright} />}
-      />
+      <Footer/>
     </LayoutProvider>
   );
 }
