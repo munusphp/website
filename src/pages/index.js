@@ -7,7 +7,6 @@
 
 import React from 'react';
 import classnames from 'classnames';
-import Footer from '@theme/Footer';
 import Link from '@docusaurus/Link';
 import LayoutProvider from '@theme/Layout/Provider';
 import ColorModeToggle from '@theme/Navbar/ColorModeToggle';
@@ -16,7 +15,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 import FooterCopyright from '@theme/Footer/Copyright';
 import FooterLayout from '@theme/Footer/Layout';
-import {useThemeConfig} from '@docusaurus/theme-common';
 
 const features = [
   {
@@ -69,12 +67,8 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
-  const {footer} = useThemeConfig();
-  if (!footer) {
-    return null;
-  }
-  const {copyright, links, logo, style} = footer;
+  const {siteConfig} = context;
+  const {themeConfig: {footer: {copyright, style}}} = siteConfig;
 
   return (
     <LayoutProvider>
@@ -83,9 +77,9 @@ function Home() {
           <ColorModeToggle/>
         </div>
         <div className={classnames('container', styles.container)}>
-          <img className={classnames(styles.hero__logo)} src="img/logo-dark.svg" alt="munus-logo"/>
-          <h1 className={classnames('hero__title', styles.hero__title)}>{siteConfig.title}</h1>
-          <p className={classnames('hero__subtitle', styles.hero__subtitle)}>{siteConfig.tagline}</p>
+          <img className={classnames(styles.heroLogo)} src="img/logo-dark.svg" alt="munus-logo"/>
+          <h1 className={classnames('hero__title', styles.heroTitle)}>{siteConfig.title}</h1>
+          <p className={classnames('hero__subtitle', styles.heroSubtitle)}>{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
